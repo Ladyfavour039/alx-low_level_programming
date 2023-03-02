@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-main - number 10 code work
-
 int main(void)
 {
 int n;
