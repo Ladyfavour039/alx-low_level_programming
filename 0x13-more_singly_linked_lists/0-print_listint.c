@@ -14,7 +14,7 @@ size_t nodes = 0;
 while (h)
 {
 	nodes++;
-	printf("%int\n", h->n);
+	printf("%d\n", h->n);
 	h = h->next;
 
 }
