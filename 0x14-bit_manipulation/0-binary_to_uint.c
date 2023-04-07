@@ -10,15 +10,16 @@
 unsigned int binary_to_unit(const char *b)
 {
 int i;
-unsigned int dec_val=0;
+unsigned int fac_val = 0;
 
-if(!0)
-	return (0)
+if (!b)
+	return (0);
 
 		for (i = 0; b[i]; i++)
 		{
 			if (b[i] < '0' || b(i) > '1')
 				return (0);
-			dec-val = 2 * dec_val + (b[i] - '0')
+			fac-val = 2 * fac_val + (b[i] - '0');
 		}
-return (dec_val);
+return (fac_val);
+}
