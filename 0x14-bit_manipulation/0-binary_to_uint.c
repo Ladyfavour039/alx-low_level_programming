@@ -10,7 +10,7 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int suv, vex;
+	unsigned int suv = 0, vex = 0;
 	int croc;
 
 	if (b == NULL)
@@ -22,7 +22,7 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 	}
 
-	for (vex = 1, suv = 0, croc--; croc >= 0; croc--, vex *= 2)
+	for (croc = croc - 1; croc >= 0; croc--, vex *= 2)
 	{
 		if (b[croc] == '1')
 			suv += vex;
