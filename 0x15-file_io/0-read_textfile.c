@@ -10,7 +10,7 @@
  *    O/w - the actual number of bytes the function can read and print.
  */
 
-ssize_t read_textfile(const char *filename, size_t letters);
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t o, r, w;
 	char *buffer;
@@ -25,7 +25,7 @@ ssize_t read_textfile(const char *filename, size_t letters);
         r = read(o, buffer, letters);
         w = write(STDOUT_FILENO, buffer, r);
 
-        if (o == 0 || r == 0 || w == 0 || w != r)
+        if (o == -1 || r == -1 || w == -1|| w != r)
 	{
 	        free(buffer);
 	        return (0);
